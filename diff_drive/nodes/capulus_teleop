@@ -52,7 +52,7 @@ LIN_VEL_STEP_SIZE = 0.2
 ANG_VEL_STEP_SIZE = 0.2
 
 msg = """
-     CONTROL DEL RAPTOR
+     CONTROL DE CAPULUS
 ---------------------------
 Controles:
 
@@ -63,7 +63,7 @@ Controles:
                   abajo
 
     (ok-enter: para frenar por completo)
-   (e: finalizar conexion con el RAPTOR)
+   (e: finalizar conexion con el CAPULUS)
       (r: iniciar marcha y adelante)
 """
 
