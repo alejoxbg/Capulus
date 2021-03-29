@@ -36,6 +36,8 @@ import rospy
 import diagnostic_updater
 import diagnostic_msgs
 
+from roboclaw_driver.msg import Stats, SpeedCommand
+from roboclaw_driver import RoboclawControl, Roboclaw, RoboclawStub
 import sys, select, os
 if os.name == 'nt':
   import msvcrt
