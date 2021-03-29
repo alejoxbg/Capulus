@@ -212,10 +212,6 @@ if __name__=="__main__":
             twist = SpeedCommand()
 
 
-
-
-
-
             #cinematica de robot diferencial
             Vr = round(target_linear_vel,2) + round(target_angular_vel,2)
             Vl = round(target_linear_vel,2) - round(target_angular_vel,2)      
@@ -230,19 +226,6 @@ if __name__=="__main__":
 
             
             twist.m2_qpps= Vl_ticks
-
-            pub.publish(twist)
-
-
-            
-            twist.m1_qpps =0
-
-            
-            twist.m2_qpps= 0
-
-
-
-
 
             pub.publish(twist)
     except:
