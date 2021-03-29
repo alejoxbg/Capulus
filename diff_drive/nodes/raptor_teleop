@@ -144,7 +144,6 @@ if __name__=="__main__":
         print(msg)
         while(1):
             key = ord(get())
-            print (key)
             if key == 65 :
             	if target_linear_vel < 0 and target_linear_vel >= -0.8:
             		target_linear_vel=0
@@ -171,7 +170,7 @@ if __name__=="__main__":
             		target_linear_vel = checkLinearLimitVelocity(target_linear_vel - LIN_VEL_STEP_SIZE)
             		status = status + 1
             		print(vels(target_linear_vel,target_angular_vel))
-            elif key == 68 :
+            elif key == 67 :
             	if target_angular_vel < 0 and target_angular_vel >= -1.0:
             		target_angular_vel = 0
             		status = status + 1
@@ -184,7 +183,7 @@ if __name__=="__main__":
             		target_angular_vel = checkAngularLimitVelocity(target_angular_vel + ANG_VEL_STEP_SIZE)
             		status = status + 1
             		print(vels(target_linear_vel,target_angular_vel))
-            elif key == 67 :
+            elif key == 68 :
             	if target_angular_vel > 0 and target_angular_vel <= 1.0:
             		target_angular_vel = 0
             		status = status + 1
@@ -204,32 +203,48 @@ if __name__=="__main__":
             	control_angular_vel = 0.0
             	print(vels(target_linear_vel, target_angular_vel))
             else:
-            	if (key == 101):
+            	if (key == 101 or key == 3):
             		break
             	if status == 20 :
             		print(msg)
             		status = 0
 
             twist = SpeedCommand()
-            twist.header.stamp = rospy.get_rostime()
-            print("a")
+
+
+
+
+
+
             #cinematica de robot diferencial
-            Vr = target_linear_vel + target_angular_vel
-            Vl = target_linear_vel - target_angular_vel      
-            print("b")                  
+            Vr = round(target_linear_vel,2) + round(target_angular_vel,2)
+            Vl = round(target_linear_vel,2) - round(target_angular_vel,2)      
+              
             #velocidad en QPPS
             Vr_ticks = int(Vr * 3500) # ticks/meter ##Revisar##
             Vl_ticks = int(Vl * 3500)
-            print("c")
 
 
+
+            twist.m1_qpps =Vr_ticks
+
+            
+            twist.m2_qpps= Vl_ticks
+
+            pub.publish(twist)
+
+
+            
             twist.m1_qpps =0
 
             
             twist.m2_qpps= 0
-            print("d")
+
+
+
+
+
             pub.publish(twist)
-            print("f")
     except:
         print(e)
 
