@@ -1,0 +1,935 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  basicTimeStep 16
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.09121090261087422 0.99196727779536 0.08764411576468126 1.5389768955805745
+  position 2.655504154360672 0.6421134384606103 0.4844854793436517
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 10 10
+}
+WoodenBox {
+  translation -0.0484065 -0.26 0.453855
+  size 0.6 0.6 0.05
+}
+WoodenBox {
+  translation -0.0484065 -0.26 0.703855
+  name "wooden box(1)"
+  size 0.6 0.6 0.05
+}
+WoodenBox {
+  translation -0.0484065 -0.26 0.943855
+  name "wooden box(2)"
+  size 0.6 0.6 0.05
+}
+WoodenBox {
+  translation -0.0484065 -0.26 1.19385
+  name "wooden box(3)"
+  size 0.6 0.6 0.05
+}
+Robot {
+  translation 0 0.15 0
+  children [
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        anchor -0.114 0.0193 0
+      }
+      device [
+        RotationalMotor {
+          name "RIGHT_MOTOR"
+          maxTorque 1000
+        }
+      ]
+      endPoint Solid {
+        translation -0.114 -0.013999916573080449 7.45400958038697e-05
+        rotation -1 0 0 0.0022384438146056482
+        children [
+          HingeJoint {
+            jointParameters DEF RIGHT HingeJointParameters {
+              anchor -0.024 -0.021 -0.2127
+              springConstant 10
+              dampingConstant 10
+            }
+            device [
+              RotationalMotor {
+              }
+            ]
+            endPoint Solid {
+              translation -0.024 -0.021 -0.2127
+              rotation -0.0015279701189522335 0.8146420634197563 0.579962045149954 3.12343
+              children [
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    anchor 0.01 -0.065 -0.0499
+                  }
+                  device [
+                    RotationalMotor {
+                      name "wheel_r1"
+                    }
+                  ]
+                  endPoint Solid {
+                    translation 0.01 -0.065 -0.0499
+                    rotation 0.9999999999999999 0 0 3.2158051611490266
+                    children [
+                      Shape {
+                        appearance PBRAppearance {
+                          baseColor 0 1 0
+                          metalness 0.1
+                        }
+                        geometry DEF rueda Mesh {
+                          url [
+                            "/home/alejoxbg/Documents/Capulus/meshes/Rueda_pequeñaV1.1.dae"
+                          ]
+                        }
+                      }
+                    ]
+                    boundingObject USE rueda
+                    physics Physics {
+                    }
+                  }
+                }
+                Shape {
+                  appearance PBRAppearance {
+                    baseColor 1 0 0
+                    metalness 0.1
+                  }
+                  geometry DEF pata Mesh {
+                    url [
+                      "/home/alejoxbg/Documents/Capulus/meshes/Pieza_resorteV1.1.dae"
+                    ]
+                  }
+                }
+              ]
+              name "solid(2)"
+              boundingObject USE pata
+              physics Physics {
+              }
+            }
+          }
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              anchor -0.024 -0.021 -0.0791
+              springConstant 10
+              dampingConstant 10
+            }
+            device [
+              RotationalMotor {
+              }
+            ]
+            endPoint Solid {
+              translation -0.024 -0.021 -0.0791
+              rotation -0.0015279701189522335 0.8146420634197563 0.579962045149954 3.12343
+              children [
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    anchor 0.01 -0.065 -0.0499
+                  }
+                  device [
+                    RotationalMotor {
+                      name "wheel_r2"
+                    }
+                  ]
+                  endPoint Solid {
+                    translation 0.01 -0.065 -0.0499
+                    rotation 0.9999999999999999 0 0 3.2158051611490266
+                    children [
+                      Shape {
+                        appearance PBRAppearance {
+                          baseColor 0 1 0
+                          metalness 0.1
+                        }
+                        geometry DEF rueda Mesh {
+                          url [
+                            "/home/alejoxbg/Documents/Capulus/meshes/Rueda_pequeñaV1.1.dae"
+                          ]
+                        }
+                      }
+                    ]
+                    boundingObject USE rueda
+                    physics Physics {
+                    }
+                  }
+                }
+                Shape {
+                  appearance PBRAppearance {
+                    baseColor 1 0 0
+                    metalness 0.1
+                  }
+                  geometry DEF pata Mesh {
+                    url [
+                      "/home/alejoxbg/Documents/Capulus/meshes/Pieza_resorteV1.1.dae"
+                    ]
+                  }
+                }
+              ]
+              name "solid(3)"
+              boundingObject USE pata
+              physics Physics {
+              }
+            }
+          }
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              anchor -0.024 -0.021 0.3212
+              springConstant 10
+              dampingConstant 10
+            }
+            device [
+              RotationalMotor {
+              }
+            ]
+            endPoint Solid {
+              translation -0.024 -0.021 0.3212
+              rotation -0.0015279701189522335 0.8146420634197563 0.579962045149954 3.12343
+              children [
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    anchor 0.01 -0.065 -0.0499
+                  }
+                  device [
+                    RotationalMotor {
+                      name "wheel_r3"
+                    }
+                  ]
+                  endPoint Solid {
+                    translation 0.01 -0.065 -0.0499
+                    rotation 0.9999999999999999 0 0 3.2158051611490266
+                    children [
+                      Shape {
+                        appearance PBRAppearance {
+                          baseColor 0 1 0
+                          metalness 0.1
+                        }
+                        geometry DEF rueda Mesh {
+                          url [
+                            "/home/alejoxbg/Documents/Capulus/meshes/Rueda_pequeñaV1.1.dae"
+                          ]
+                        }
+                      }
+                    ]
+                    boundingObject USE rueda
+                    physics Physics {
+                    }
+                  }
+                }
+                Shape {
+                  appearance PBRAppearance {
+                    baseColor 1 0 0
+                    metalness 0.1
+                  }
+                  geometry DEF pata Mesh {
+                    url [
+                      "/home/alejoxbg/Documents/Capulus/meshes/Pieza_resorteV1.1.dae"
+                    ]
+                  }
+                }
+              ]
+              name "solid(4)"
+              boundingObject USE pata
+              physics Physics {
+              }
+            }
+          }
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              anchor -0.024 -0.021 0.1878
+              springConstant 10
+              dampingConstant 10
+            }
+            device [
+              RotationalMotor {
+              }
+            ]
+            endPoint Solid {
+              translation -0.024 -0.021 0.1878
+              rotation -0.0015279701189522335 0.8146420634197563 0.579962045149954 3.12343
+              children [
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    anchor 0.01 -0.065 -0.0499
+                  }
+                  device [
+                    RotationalMotor {
+                      name "wheel_r4"
+                    }
+                  ]
+                  endPoint Solid {
+                    translation 0.01 -0.065 -0.0499
+                    rotation 0.9999999999999999 0 0 3.2158051611490266
+                    children [
+                      Shape {
+                        appearance PBRAppearance {
+                          baseColor 0 1 0
+                          metalness 0.1
+                        }
+                        geometry DEF rueda Mesh {
+                          url [
+                            "/home/alejoxbg/Documents/Capulus/meshes/Rueda_pequeñaV1.1.dae"
+                          ]
+                        }
+                      }
+                    ]
+                    boundingObject USE rueda
+                    physics Physics {
+                    }
+                  }
+                }
+                Shape {
+                  appearance PBRAppearance {
+                    baseColor 1 0 0
+                    metalness 0.1
+                  }
+                  geometry DEF pata Mesh {
+                    url [
+                      "/home/alejoxbg/Documents/Capulus/meshes/Pieza_resorteV1.1.dae"
+                    ]
+                  }
+                }
+              ]
+              name "solid(1)"
+              boundingObject USE pata
+              physics Physics {
+              }
+            }
+          }
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              anchor -0.024 -0.021 0.0543
+              springConstant 10
+              dampingConstant 10
+            }
+            device [
+              RotationalMotor {
+              }
+            ]
+            endPoint Solid {
+              translation -0.024 -0.021 0.0543
+              rotation -0.0015279701189522335 0.8146420634197563 0.579962045149954 3.12343
+              children [
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    anchor 0.01 -0.065 -0.0499
+                  }
+                  device [
+                    RotationalMotor {
+                      name "wheel_r5"
+                    }
+                  ]
+                  endPoint Solid {
+                    translation 0.01 -0.065 -0.0499
+                    rotation 0.9999999999999999 0 0 3.2158051611490266
+                    children [
+                      Shape {
+                        appearance PBRAppearance {
+                          baseColor 0 1 0
+                          metalness 0.1
+                        }
+                        geometry DEF rueda Mesh {
+                          url [
+                            "/home/alejoxbg/Documents/Capulus/meshes/Rueda_pequeñaV1.1.dae"
+                          ]
+                        }
+                      }
+                    ]
+                    boundingObject USE rueda
+                    physics Physics {
+                    }
+                  }
+                }
+                Shape {
+                  appearance PBRAppearance {
+                    baseColor 1 0 0
+                    metalness 0.1
+                  }
+                  geometry DEF pata Mesh {
+                    url [
+                      "/home/alejoxbg/Documents/Capulus/meshes/Pieza_resorteV1.1.dae"
+                    ]
+                  }
+                }
+              ]
+              boundingObject USE pata
+              physics Physics {
+              }
+            }
+          }
+          Track {
+            rotation 0 1 0 1.5707996938995747
+            children [
+              TrackWheel {
+                position -0.355 0.043
+                children [
+                  Transform {
+                    translation 0 0 -0.045
+                    children [
+                      Shape {
+                        appearance PBRAppearance {
+                          baseColor 0 0 1
+                          metalness 0.1
+                        }
+                        geometry Mesh {
+                          url [
+                            "/home/alejoxbg/Documents/Capulus/meshes/RuedaV1.4.dae"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+              TrackWheel {
+                position 0.355 0.043
+                children [
+                  Transform {
+                    translation 0 0 -0.045
+                    children [
+                      Shape {
+                        appearance PBRAppearance {
+                          baseColor 0 0 1
+                          metalness 0.1
+                        }
+                        geometry Mesh {
+                          url [
+                            "/home/alejoxbg/Documents/Capulus/meshes/RuedaV1.4.dae"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+            boundingObject Group {
+              children [
+                Transform {
+                  translation 0.344 -0.03 -0.035
+                  rotation 0 0 1 -2.3809
+                  children [
+                    Box {
+                      size 0.15 0.0054 0.02
+                    }
+                  ]
+                }
+                Transform {
+                  translation -0.344 -0.03 -0.035
+                  rotation 0 0 1 2.3808996938995746
+                  children [
+                    Box {
+                      size 0.15 0.005 0.02
+                    }
+                  ]
+                }
+                Transform {
+                  rotation 0 1 0 3.141592653589793
+                  children [
+                    Box {
+                      size 0.55 0.25 0.09
+                    }
+                  ]
+                }
+                Transform {
+                  translation 0.355 0.043 -0.024
+                  rotation 0 1 0 -3.141592653589793
+                  children [
+                    Mesh {
+                      url [
+                        "/home/alejoxbg/Documents/Capulus/meshes/RuedaV1.4.dae"
+                      ]
+                    }
+                  ]
+                }
+                Transform {
+                  translation -0.355 0.043 -0.024
+                  rotation 0 1 0 3.141592653589793
+                  children [
+                    Mesh {
+                      url [
+                        "/home/alejoxbg/Documents/Capulus/meshes/RuedaV1.4.dae"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            physics Physics {
+            }
+            device [
+              LinearMotor {
+                name "RIGHT_LINEAR"
+              }
+            ]
+          }
+          Shape {
+            appearance PBRAppearance {
+              baseColor 1 0 1
+              metalness 0.1
+            }
+            geometry DEF RIGHT Mesh {
+              url [
+                "/home/alejoxbg/Documents/Capulus/meshes/Lado_DerechoV1.2.dae"
+              ]
+            }
+          }
+        ]
+        name "solid(1)"
+        boundingObject Mesh {
+          url [
+            "/home/alejoxbg/Documents/Capulus/meshes/Lado_DerechoV1.2.dae"
+          ]
+        }
+        physics Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        anchor 0.114 0.0193 0
+      }
+      device [
+        RotationalMotor {
+          name "LEFT_MOTOR"
+          maxTorque 1000
+        }
+      ]
+      endPoint Solid {
+        translation 0.114 -0.014000000000000002 0
+        rotation 1 0 0 0
+        children [
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              anchor 0.024 -0.021 -0.2127
+              springConstant 10
+              dampingConstant 10
+            }
+            device [
+              RotationalMotor {
+              }
+            ]
+            endPoint Solid {
+              translation 0.024 -0.021 -0.2127
+              rotation 1 0 0 0.009107188954075153
+              children [
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    anchor 0.01 -0.065 -0.0499
+                  }
+                  device [
+                    RotationalMotor {
+                      name "wheel_l1"
+                    }
+                  ]
+                  endPoint Solid {
+                    translation 0.01 -0.065 -0.0499
+                    rotation 1 0 0 0
+                    children [
+                      Shape {
+                        appearance PBRAppearance {
+                          baseColor 0 1 0
+                          metalness 0.1
+                        }
+                        geometry USE rueda
+                      }
+                    ]
+                    boundingObject Mesh {
+                      url [
+                        "/home/alejoxbg/Documents/Capulus/meshes/Rueda_pequeñaV1.1.dae"
+                      ]
+                    }
+                    physics Physics {
+                      density -1
+                      mass 0.001
+                    }
+                  }
+                }
+                Shape {
+                  appearance PBRAppearance {
+                    baseColor 1 0 0
+                    metalness 0.1
+                  }
+                  geometry USE pata
+                }
+              ]
+              name "solid(4)"
+              boundingObject USE pata
+              physics Physics {
+              }
+            }
+          }
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              anchor 0.024 -0.021 -0.0791
+              springConstant 10
+              dampingConstant 10
+            }
+            device [
+              RotationalMotor {
+              }
+            ]
+            endPoint Solid {
+              translation 0.024 -0.021 -0.0791
+              rotation 1 0 0 0.009107188954075153
+              children [
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    anchor 0.01 -0.065 -0.0499
+                  }
+                  device [
+                    RotationalMotor {
+                      name "wheel_l2"
+                    }
+                  ]
+                  endPoint Solid {
+                    translation 0.01 -0.065 -0.0499
+                    rotation 1 0 0 0
+                    children [
+                      Shape {
+                        appearance PBRAppearance {
+                          baseColor 0 1 0
+                          metalness 0.1
+                        }
+                        geometry USE rueda
+                      }
+                    ]
+                    boundingObject Mesh {
+                      url [
+                        "/home/alejoxbg/Documents/Capulus/meshes/Rueda_pequeñaV1.1.dae"
+                      ]
+                    }
+                    physics Physics {
+                    }
+                  }
+                }
+                Shape {
+                  appearance PBRAppearance {
+                    baseColor 1 0 0
+                    metalness 0.1
+                  }
+                  geometry USE pata
+                }
+              ]
+              name "solid(3)"
+              boundingObject USE pata
+              physics Physics {
+              }
+            }
+          }
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              anchor 0.024 -0.021 0.3212
+              springConstant 10
+              dampingConstant 10
+            }
+            device [
+              RotationalMotor {
+              }
+            ]
+            endPoint Solid {
+              translation 0.024 -0.021 0.3212
+              rotation 1 0 0 0.009107188954075153
+              children [
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    anchor 0.01 -0.065 -0.0499
+                  }
+                  device [
+                    RotationalMotor {
+                      name "wheel_l3"
+                    }
+                  ]
+                  endPoint Solid {
+                    translation 0.01 -0.065 -0.0499
+                    rotation 1 0 0 0
+                    children [
+                      Shape {
+                        appearance PBRAppearance {
+                          baseColor 0 1 0
+                          metalness 0.1
+                        }
+                        geometry USE rueda
+                      }
+                    ]
+                    boundingObject Mesh {
+                      url [
+                        "/home/alejoxbg/Documents/Capulus/meshes/Rueda_pequeñaV1.1.dae"
+                      ]
+                    }
+                    physics Physics {
+                    }
+                  }
+                }
+                Shape {
+                  appearance PBRAppearance {
+                    baseColor 1 0 0
+                    metalness 0.1
+                  }
+                  geometry USE pata
+                }
+              ]
+              name "solid(2)"
+              boundingObject USE pata
+              physics Physics {
+              }
+            }
+          }
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              anchor 0.024 -0.021 0.1878
+              springConstant 10
+              dampingConstant 10
+            }
+            device [
+              RotationalMotor {
+              }
+            ]
+            endPoint Solid {
+              translation 0.024 -0.021 0.1878
+              rotation 1 0 0 0.009107188954075153
+              children [
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    anchor 0.01 -0.065 -0.0499
+                  }
+                  device [
+                    RotationalMotor {
+                      name "wheel_l4"
+                    }
+                  ]
+                  endPoint Solid {
+                    translation 0.01 -0.065 -0.0499
+                    rotation 1 0 0 0
+                    children [
+                      Shape {
+                        appearance PBRAppearance {
+                          baseColor 0 1 0
+                          metalness 0.1
+                        }
+                        geometry USE rueda
+                      }
+                    ]
+                    boundingObject Mesh {
+                      url [
+                        "/home/alejoxbg/Documents/Capulus/meshes/Rueda_pequeñaV1.1.dae"
+                      ]
+                    }
+                    physics Physics {
+                    }
+                  }
+                }
+                Shape {
+                  appearance PBRAppearance {
+                    baseColor 1 0 0
+                    metalness 0.1
+                  }
+                  geometry USE pata
+                }
+              ]
+              name "solid(1)"
+              boundingObject USE pata
+              physics Physics {
+              }
+            }
+          }
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              anchor 0.024 -0.021 0.0543
+              springConstant 10
+              dampingConstant 10
+            }
+            device [
+              RotationalMotor {
+              }
+            ]
+            endPoint Solid {
+              translation 0.024 -0.021 0.0543
+              rotation 1 0 0 0.009107188954075153
+              children [
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    anchor 0.01 -0.065 -0.0499
+                  }
+                  device [
+                    RotationalMotor {
+                      name "wheel_l5"
+                    }
+                  ]
+                  endPoint Solid {
+                    translation 0.01 -0.065 -0.0499
+                    rotation 1 0 0 0
+                    children [
+                      Shape {
+                        appearance PBRAppearance {
+                          baseColor 0 1 0
+                          metalness 0.1
+                        }
+                        geometry USE rueda
+                      }
+                    ]
+                    boundingObject Mesh {
+                      url [
+                        "/home/alejoxbg/Documents/Capulus/meshes/Rueda_pequeñaV1.1.dae"
+                      ]
+                    }
+                    physics Physics {
+                    }
+                  }
+                }
+                Shape {
+                  appearance PBRAppearance {
+                    baseColor 1 0 0
+                    metalness 0.1
+                  }
+                  geometry USE pata
+                }
+              ]
+              boundingObject USE pata
+              physics Physics {
+              }
+            }
+          }
+          Track {
+            rotation 0 1 0 1.5707996938995747
+            children [
+              TrackWheel {
+                position -0.355 0.043
+                children [
+                  Transform {
+                    translation 0 0 0.026
+                    children [
+                      Shape {
+                        appearance PBRAppearance {
+                          baseColor 0 0 1
+                          metalness 0.1
+                        }
+                        geometry Mesh {
+                          url [
+                            "/home/alejoxbg/Documents/Capulus/meshes/RuedaV1.4.dae"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+              TrackWheel {
+                position 0.355 0.043
+                children [
+                  Transform {
+                    translation 0 0 0.025
+                    children [
+                      Shape {
+                        appearance PBRAppearance {
+                          baseColor 0 0 1
+                          metalness 0.1
+                        }
+                        geometry Mesh {
+                          url [
+                            "/home/alejoxbg/Documents/Capulus/meshes/RuedaV1.4.dae"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+            name "LEFT_TRACK"
+            boundingObject DEF TRACKED Group {
+              children [
+                Transform {
+                  translation 0.344 -0.03 0.035
+                  rotation 0 0 1 -2.3809
+                  children [
+                    Box {
+                      size 0.15 0.0054 0.02
+                    }
+                  ]
+                }
+                Transform {
+                  translation -0.344 -0.03 0.035
+                  rotation 0 0 1 2.3808996938995746
+                  children [
+                    Box {
+                      size 0.15 0.005 0.02
+                    }
+                  ]
+                }
+                Transform {
+                  rotation 0 1 0 3.141592653589793
+                  children [
+                    Box {
+                      size 0.58 0.24 0.02
+                    }
+                  ]
+                }
+                Transform {
+                  translation 0.355 0.043 0.044
+                  rotation 0 1 0 -3.141592653589793
+                  children [
+                    Mesh {
+                      url [
+                        "/home/alejoxbg/Documents/Capulus/meshes/RuedaV1.4.dae"
+                      ]
+                    }
+                  ]
+                }
+                Transform {
+                  translation -0.355 0.043 0.045
+                  rotation 0 1 0 -3.141592653589793
+                  children [
+                    Mesh {
+                      url [
+                        "/home/alejoxbg/Documents/Capulus/meshes/RuedaV1.4.dae"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            physics Physics {
+            }
+            device [
+              LinearMotor {
+                name "LEFT_LINEAR"
+              }
+            ]
+          }
+          Shape {
+            appearance PBRAppearance {
+              baseColor 1 0 1
+              metalness 0.1
+            }
+            geometry DEF LEFT Mesh {
+              url [
+                "/home/alejoxbg/Documents/Capulus/meshes/Lado_IzquierdoV1.2.dae"
+              ]
+            }
+          }
+        ]
+        boundingObject USE LEFT
+        physics Physics {
+        }
+      }
+    }
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 1
+        metalness 0.1
+      }
+      geometry DEF CHASIS Mesh {
+        url [
+          "/home/alejoxbg/Documents/Capulus/meshes/ChasisV1.5.dae"
+        ]
+      }
+    }
+  ]
+  boundingObject USE CHASIS
+  physics Physics {
+  }
+  controller "Basic_capulus"
+}
