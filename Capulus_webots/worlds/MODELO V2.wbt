@@ -4,8 +4,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation 0.08544616736633795 -0.9867552755699346 -0.1378875578770843 4.310607850260343
-  position 3.3003757031688936 3.4356787003178235 -0.9965376957327503
+  orientation -0.01104707459734956 -0.9998451811265552 -0.01369583589440935 2.3818551147585967
+  position -0.22119307263553736 2.4515654506821427 -0.7544419158108303
 }
 TexturedBackground {
 }
@@ -62,7 +62,7 @@ Robot {
                     }
                     geometry Mesh {
                       url [
-                        "/home/alejoxbg/Documents/Capulus/meshes/Webots/Rueda_TraseraV1.0.dae"
+                        "Rueda_TraseraV1.0.dae"
                       ]
                     }
                   }
@@ -107,7 +107,7 @@ Robot {
                     }
                     geometry Mesh {
                       url [
-                        "/home/alejoxbg/Documents/Capulus/meshes/Webots/Rueda_FrenteV1.0.dae"
+                        "Rueda_FrenteV1.0.dae"
                       ]
                     }
                   }
@@ -217,7 +217,7 @@ Robot {
                         }
                         geometry DEF wheel Mesh {
                           url [
-                            "/home/alejoxbg/Documents/Capulus/meshes/Webots/Rueda_ResorteV1.0.dae"
+                            "Rueda_ResorteV1.0.dae"
                           ]
                         }
                       }
@@ -233,7 +233,7 @@ Robot {
                   }
                   geometry DEF Pata Mesh {
                     url [
-                      "/home/alejoxbg/Documents/Capulus/meshes/Webots/Pieza_ResorteV1.3.dae"
+                      "Pieza_ResorteV1.3.dae"
                     ]
                   }
                 }
@@ -289,7 +289,7 @@ Robot {
                   }
                   geometry DEF Pata Mesh {
                     url [
-                      "/home/alejoxbg/Documents/Capulus/meshes/Webots/Pieza_ResorteV1.3.dae"
+                      "Pieza_ResorteV1.3.dae"
                     ]
                   }
                 }
@@ -330,7 +330,7 @@ Robot {
                         }
                         geometry DEF wheel Mesh {
                           url [
-                            "/home/alejoxbg/Documents/Capulus/meshes/Webots/Rueda_ResorteV1.0.dae"
+                            "Rueda_ResorteV1.0.dae"
                           ]
                         }
                       }
@@ -346,7 +346,7 @@ Robot {
                   }
                   geometry DEF Pata Mesh {
                     url [
-                      "/home/alejoxbg/Documents/Capulus/meshes/Webots/Pieza_ResorteV1.3.dae"
+                      "Pieza_ResorteV1.3.dae"
                     ]
                   }
                 }
@@ -387,7 +387,7 @@ Robot {
                         }
                         geometry DEF wheel Mesh {
                           url [
-                            "/home/alejoxbg/Documents/Capulus/meshes/Webots/Rueda_ResorteV1.0.dae"
+                            "Rueda_ResorteV1.0.dae"
                           ]
                         }
                       }
@@ -403,7 +403,7 @@ Robot {
                   }
                   geometry DEF Pata Mesh {
                     url [
-                      "/home/alejoxbg/Documents/Capulus/meshes/Webots/Pieza_ResorteV1.3.dae"
+                      "Pieza_ResorteV1.3.dae"
                     ]
                   }
                 }
@@ -444,7 +444,7 @@ Robot {
                         }
                         geometry DEF wheel Mesh {
                           url [
-                            "/home/alejoxbg/Documents/Capulus/meshes/Webots/Rueda_ResorteV1.0.dae"
+                            "Rueda_ResorteV1.0.dae"
                           ]
                         }
                       }
@@ -460,7 +460,7 @@ Robot {
                   }
                   geometry DEF Pata Mesh {
                     url [
-                      "/home/alejoxbg/Documents/Capulus/meshes/Webots/Pieza_ResorteV1.3.dae"
+                      "Pieza_ResorteV1.3.dae"
                     ]
                   }
                 }
@@ -477,7 +477,7 @@ Robot {
             }
             geometry DEF Right Mesh {
               url [
-                "/home/alejoxbg/Documents/Capulus/meshes/Webots/Perfil_DerechoV1.1.dae"
+                "Perfil_DerechoV1.1.dae"
               ]
             }
           }
@@ -546,7 +546,7 @@ Robot {
                     }
                     geometry Mesh {
                       url [
-                        "/home/alejoxbg/Documents/Capulus/meshes/Webots/Rueda_TraseraV1.0.dae"
+                        "Rueda_TraseraV1.0.dae"
                       ]
                     }
                   }
@@ -563,7 +563,7 @@ Robot {
                     }
                     geometry Mesh {
                       url [
-                        "/home/alejoxbg/Documents/Capulus/meshes/Webots/Rueda_FrenteV1.0.dae"
+                        "Rueda_FrenteV1.0.dae"
                       ]
                     }
                   }
@@ -690,7 +690,7 @@ Robot {
                   }
                   geometry DEF Pata Mesh {
                     url [
-                      "/home/alejoxbg/Documents/Capulus/meshes/Webots/Pieza_ResorteV1.3.dae"
+                      "Pieza_ResorteV1.3.dae"
                     ]
                   }
                 }
@@ -730,7 +730,7 @@ Robot {
                         }
                         geometry DEF wheel Mesh {
                           url [
-                            "/home/alejoxbg/Documents/Capulus/meshes/Webots/Rueda_ResorteV1.0.dae"
+                            "Rueda_ResorteV1.0.dae"
                           ]
                         }
                       }
@@ -746,7 +746,7 @@ Robot {
                   }
                   geometry DEF Pata Mesh {
                     url [
-                      "/home/alejoxbg/Documents/Capulus/meshes/Webots/Pieza_ResorteV1.3.dae"
+                      "Pieza_ResorteV1.3.dae"
                     ]
                   }
                 }
@@ -787,7 +787,7 @@ Robot {
                         }
                         geometry DEF wheel Mesh {
                           url [
-                            "/home/alejoxbg/Documents/Capulus/meshes/Webots/Rueda_ResorteV1.0.dae"
+                            "Rueda_ResorteV1.0.dae"
                           ]
                         }
                       }
@@ -803,7 +803,7 @@ Robot {
                   }
                   geometry DEF Pata Mesh {
                     url [
-                      "/home/alejoxbg/Documents/Capulus/meshes/Webots/Pieza_ResorteV1.3.dae"
+                      "Pieza_ResorteV1.3.dae"
                     ]
                   }
                 }
@@ -844,7 +844,7 @@ Robot {
                         }
                         geometry DEF wheel Mesh {
                           url [
-                            "/home/alejoxbg/Documents/Capulus/meshes/Webots/Rueda_ResorteV1.0.dae"
+                            "Rueda_ResorteV1.0.dae"
                           ]
                         }
                       }
@@ -860,7 +860,7 @@ Robot {
                   }
                   geometry DEF Pata Mesh {
                     url [
-                      "/home/alejoxbg/Documents/Capulus/meshes/Webots/Pieza_ResorteV1.3.dae"
+                      "Pieza_ResorteV1.3.dae"
                     ]
                   }
                 }
@@ -901,7 +901,7 @@ Robot {
                         }
                         geometry DEF wheel Mesh {
                           url [
-                            "/home/alejoxbg/Documents/Capulus/meshes/Webots/Rueda_ResorteV1.0.dae"
+                            "Rueda_ResorteV1.0.dae"
                           ]
                         }
                       }
@@ -917,7 +917,7 @@ Robot {
                   }
                   geometry DEF Pata Mesh {
                     url [
-                      "/home/alejoxbg/Documents/Capulus/meshes/Webots/Pieza_ResorteV1.3.dae"
+                      "Pieza_ResorteV1.3.dae"
                     ]
                   }
                 }
@@ -934,7 +934,7 @@ Robot {
             }
             geometry DEF Left Mesh {
               url [
-                "/home/alejoxbg/Documents/Capulus/meshes/Webots/Perfil_IzquierdoV1.1.dae"
+                "Perfil_IzquierdoV1.1.dae"
               ]
             }
           }
@@ -950,7 +950,7 @@ Robot {
       }
       geometry DEF Chasis Mesh {
         url [
-          "/home/alejoxbg/Documents/Capulus/meshes/Webots/ChasisV1.6.dae"
+          "ChasisV1.6.dae"
         ]
       }
     }
