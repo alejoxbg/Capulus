@@ -1,0 +1,964 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  basicTimeStep 16
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.01104707459734956 -0.9998451811265552 -0.01369583589440935 2.3818551147585967
+  position -0.22119307263553736 2.4515654506821427 -0.7544419158108303
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+UnevenTerrain {
+  randomSeed 23
+  perlinNOctaves 9
+}
+Ramp30deg {
+  translation 0.44 1.76 2.32
+  rotation 0 1 0 -1.5707953071795862
+}
+ThreeSteps {
+  translation 0.53 1.72 3.58
+}
+WoodenBox {
+  translation -4.85 2.32 1.65
+  rotation 1 0 0 -0.7854003061004253
+  size 2 0.6 2.2
+}
+WoodenBox {
+  translation -4.87 2.24 3
+  name "wooden box(1)"
+  size 2 2.1 1.6
+}
+Robot {
+  translation 0.61 2.39 0
+  children [
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        anchor -0.1 0 0
+      }
+      device [
+        RotationalMotor {
+          name "RIGHT_MOTOR"
+          maxTorque 1000
+        }
+      ]
+      endPoint Solid {
+        translation -0.115 0 0
+        rotation 1 0 0 0
+        children [
+          Track {
+            rotation 0 1 0 -1.5707996938995747
+            children [
+              Transform {
+                translation -0.251 0.023 0.005
+                children [
+                  Shape {
+                    appearance PBRAppearance {
+                      baseColor 0 0 0
+                      metalness 0.1
+                    }
+                    geometry Mesh {
+                      url [
+                        "Rueda_TraseraV1.0.dae"
+                      ]
+                    }
+                  }
+                ]
+              }
+              Transform {
+                translation 0.215 -0.047 0.025
+                rotation 0 0 1 0.523599
+                children [
+                  Shape {
+                    appearance PBRAppearance {
+                      baseColor 0 0 0
+                      metalness 0.1
+                    }
+                    geometry Box {
+                      size 0.12 0.001 0.04
+                    }
+                  }
+                ]
+              }
+              Transform {
+                translation 0.003 0.06 0.025
+                children [
+                  Shape {
+                    appearance PBRAppearance {
+                      baseColor 0 0 0
+                      metalness 0.1
+                    }
+                    geometry Box {
+                      size 0.5 0.001 0.04
+                    }
+                  }
+                ]
+              }
+              Transform {
+                translation 0.283 0.023 0.005
+                children [
+                  Shape {
+                    appearance PBRAppearance {
+                      baseColor 0 0 0
+                      metalness 0.1
+                    }
+                    geometry Mesh {
+                      url [
+                        "Rueda_FrenteV1.0.dae"
+                      ]
+                    }
+                  }
+                ]
+              }
+              Transform {
+                translation -0.236 -0.047 0.025
+                rotation 0 0 1 -0.785
+                children [
+                  Shape {
+                    appearance PBRAppearance {
+                      baseColor 0 0 0
+                      metalness 0.1
+                    }
+                    geometry Box {
+                      size 0.06 0.001 0.04
+                    }
+                  }
+                ]
+              }
+            ]
+            boundingObject Group {
+              children [
+                Transform {
+                  translation -0.251 0.023 0.025
+                  rotation 1 0 0 1.5707996938995747
+                  children [
+                    Cylinder {
+                      height 0.04
+                      radius 0.045
+                    }
+                  ]
+                }
+                Transform {
+                  translation 0.283 0.023 0.025
+                  rotation 1 0 0 1.5708003061004252
+                  children [
+                    Cylinder {
+                      height 0.04
+                      radius 0.04
+                    }
+                  ]
+                }
+                Transform {
+                  translation 0.01 0.058 0.025
+                  children [
+                    Box {
+                      size 0.5 0.001 0.04
+                    }
+                  ]
+                }
+                Transform {
+                  translation 0.215 -0.047 0.025
+                  rotation 0 0 1 0.523599
+                  children [
+                    Box {
+                      size 0.12 0.001 0.04
+                    }
+                  ]
+                }
+                Transform {
+                  translation -0.236 -0.047 0.025
+                  rotation 0 0 1 -0.785395307179586
+                  children [
+                    Box {
+                      size 0.06 0.001 0.04
+                    }
+                  ]
+                }
+              ]
+            }
+            physics Physics {
+            }
+            device [
+              LinearMotor {
+                name "RIGHT_LINEAR"
+              }
+            ]
+          }
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              anchor -0.011 -0.027 0.039
+              springConstant 50
+              dampingConstant 10
+            }
+            endPoint Solid {
+              translation -0.011 -0.027 0.039
+              rotation -0.9999999998987404 -1.2680899998715937e-06 1.4174299998564719e-05 0.5235969999999999
+              children [
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    anchor -0.035 0 -0.085
+                  }
+                  device [
+                    RotationalMotor {
+                      name "wheel_r1"
+                    }
+                  ]
+                  endPoint Solid {
+                    translation -0.035 0 -0.085
+                    rotation 1 0 0 0
+                    children [
+                      Shape {
+                        appearance PBRAppearance {
+                          baseColor 0 0 0
+                          metalness 0.1
+                        }
+                        geometry DEF wheel Mesh {
+                          url [
+                            "Rueda_ResorteV1.0.dae"
+                          ]
+                        }
+                      }
+                    ]
+                    boundingObject USE wheel
+                    physics Physics {
+                    }
+                  }
+                }
+                Shape {
+                  appearance PBRAppearance {
+                    metalness 0.7
+                  }
+                  geometry DEF Pata Mesh {
+                    url [
+                      "Pieza_ResorteV1.3.dae"
+                    ]
+                  }
+                }
+              ]
+              boundingObject USE Pata
+              physics Physics {
+              }
+            }
+          }
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              anchor -0.011 -0.027 -0.121
+              springConstant 50
+              dampingConstant 10
+            }
+            endPoint Solid {
+              translation -0.011 -0.027 -0.121
+              rotation -0.9999999998987404 -1.2680899998715937e-06 1.4174299998564719e-05 0.5235969999999999
+              children [
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    anchor -0.035 0 -0.085
+                  }
+                  device [
+                    RotationalMotor {
+                      name "wheel_r2"
+                    }
+                  ]
+                  endPoint Solid {
+                    translation -0.035 0 -0.085
+                    rotation 1 0 0 0
+                    children [
+                      Shape {
+                        appearance PBRAppearance {
+                          baseColor 0 0 0
+                          metalness 0.1
+                        }
+                        geometry DEF wheel Mesh {
+                          url [
+                            "/home/alejoxbg/Documents/Capulus/meshes/Webots/Rueda_ResorteV1.0.dae"
+                          ]
+                        }
+                      }
+                    ]
+                    boundingObject USE wheel
+                    physics Physics {
+                    }
+                  }
+                }
+                Shape {
+                  appearance PBRAppearance {
+                    metalness 0.7
+                  }
+                  geometry DEF Pata Mesh {
+                    url [
+                      "Pieza_ResorteV1.3.dae"
+                    ]
+                  }
+                }
+              ]
+              name "solid(4)"
+              boundingObject USE Pata
+              physics Physics {
+              }
+            }
+          }
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              anchor -0.011 -0.027 -0.042
+              springConstant 50
+              dampingConstant 10
+            }
+            endPoint Solid {
+              translation -0.011 -0.027 -0.042
+              rotation -0.9999999998987404 -1.2680899998715937e-06 1.4174299998564719e-05 0.5235969999999999
+              children [
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    anchor -0.035 0 -0.085
+                  }
+                  device [
+                    RotationalMotor {
+                      name "wheel_r3"
+                    }
+                  ]
+                  endPoint Solid {
+                    translation -0.035 0 -0.085
+                    rotation 1 0 0 0
+                    children [
+                      Shape {
+                        appearance PBRAppearance {
+                          baseColor 0 0 0
+                          metalness 0.1
+                        }
+                        geometry DEF wheel Mesh {
+                          url [
+                            "Rueda_ResorteV1.0.dae"
+                          ]
+                        }
+                      }
+                    ]
+                    boundingObject USE wheel
+                    physics Physics {
+                    }
+                  }
+                }
+                Shape {
+                  appearance PBRAppearance {
+                    metalness 0.7
+                  }
+                  geometry DEF Pata Mesh {
+                    url [
+                      "Pieza_ResorteV1.3.dae"
+                    ]
+                  }
+                }
+              ]
+              name "solid(3)"
+              boundingObject USE Pata
+              physics Physics {
+              }
+            }
+          }
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              anchor -0.011 -0.027 0.207
+              springConstant 50
+              dampingConstant 10
+            }
+            endPoint Solid {
+              translation -0.011 -0.027 0.207
+              rotation -0.9999999998987853 -1.232299999875273e-06 1.417429999856535e-05 0.5235969999999999
+              children [
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    anchor -0.035 0 -0.085
+                  }
+                  device [
+                    RotationalMotor {
+                      name "wheel_r4"
+                    }
+                  ]
+                  endPoint Solid {
+                    translation -0.035 0 -0.085
+                    rotation 1 0 0 0
+                    children [
+                      Shape {
+                        appearance PBRAppearance {
+                          baseColor 0 0 0
+                          metalness 0.1
+                        }
+                        geometry DEF wheel Mesh {
+                          url [
+                            "Rueda_ResorteV1.0.dae"
+                          ]
+                        }
+                      }
+                    ]
+                    boundingObject USE wheel
+                    physics Physics {
+                    }
+                  }
+                }
+                Shape {
+                  appearance PBRAppearance {
+                    metalness 0.7
+                  }
+                  geometry DEF Pata Mesh {
+                    url [
+                      "Pieza_ResorteV1.3.dae"
+                    ]
+                  }
+                }
+              ]
+              name "solid(2)"
+              boundingObject USE Pata
+              physics Physics {
+              }
+            }
+          }
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              anchor -0.011 -0.027 0.119
+              springConstant 50
+              dampingConstant 10
+            }
+            endPoint Solid {
+              translation -0.011 -0.027 0.119
+              rotation -0.9999999998987404 -1.2680899998715937e-06 1.4174299998564719e-05 0.5235969999999999
+              children [
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    anchor -0.035 0 -0.085
+                  }
+                  device [
+                    RotationalMotor {
+                      name "wheel_r5"
+                    }
+                  ]
+                  endPoint Solid {
+                    translation -0.035 0 -0.085
+                    rotation 1 0 0 0
+                    children [
+                      Shape {
+                        appearance PBRAppearance {
+                          baseColor 0 0 0
+                          metalness 0.1
+                        }
+                        geometry DEF wheel Mesh {
+                          url [
+                            "Rueda_ResorteV1.0.dae"
+                          ]
+                        }
+                      }
+                    ]
+                    boundingObject USE wheel
+                    physics Physics {
+                    }
+                  }
+                }
+                Shape {
+                  appearance PBRAppearance {
+                    metalness 0.7
+                  }
+                  geometry DEF Pata Mesh {
+                    url [
+                      "Pieza_ResorteV1.3.dae"
+                    ]
+                  }
+                }
+              ]
+              name "solid(1)"
+              boundingObject USE Pata
+              physics Physics {
+              }
+            }
+          }
+          Shape {
+            appearance PBRAppearance {
+              metalness 0.4
+            }
+            geometry DEF Right Mesh {
+              url [
+                "Perfil_DerechoV1.1.dae"
+              ]
+            }
+          }
+        ]
+        name "solid(1)"
+        boundingObject USE Right
+        physics Physics {
+          mass 1
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        anchor 0.1 0 0
+      }
+      device [
+        RotationalMotor {
+          name "LEFT_MOTOR"
+          maxTorque 1000
+        }
+      ]
+      endPoint Solid {
+        translation 0.115 0 0
+        rotation 1 0 0 0
+        children [
+          Track {
+            rotation 0 1 0 -1.5707996938995747
+            children [
+              Transform {
+                translation 0.215 -0.047 -0.025
+                rotation 0 0 1 0.523599
+                children [
+                  Shape {
+                    appearance PBRAppearance {
+                      baseColor 0 0 0
+                      metalness 0.1
+                    }
+                    geometry Box {
+                      size 0.12 0.001 0.04
+                    }
+                  }
+                ]
+              }
+              Transform {
+                translation 0.003 0.06 -0.025
+                children [
+                  Shape {
+                    appearance PBRAppearance {
+                      baseColor 0 0 0
+                      metalness 0.1
+                    }
+                    geometry Box {
+                      size 0.5 0.001 0.04
+                    }
+                  }
+                ]
+              }
+              Transform {
+                translation -0.251 0.023 -0.005
+                rotation 0 1 0 3.141592653589793
+                children [
+                  Shape {
+                    appearance PBRAppearance {
+                      baseColor 0 0 0
+                      metalness 0.1
+                    }
+                    geometry Mesh {
+                      url [
+                        "Rueda_TraseraV1.0.dae"
+                      ]
+                    }
+                  }
+                ]
+              }
+              Transform {
+                translation 0.283 0.023 -0.005
+                rotation 0 1 0 -3.141592653589793
+                children [
+                  Shape {
+                    appearance PBRAppearance {
+                      baseColor 0 0 0
+                      metalness 0.1
+                    }
+                    geometry Mesh {
+                      url [
+                        "Rueda_FrenteV1.0.dae"
+                      ]
+                    }
+                  }
+                ]
+              }
+              Transform {
+                translation -0.244 -0.038 -0.025
+                rotation 0 0 1 -0.785
+                children [
+                  Shape {
+                    appearance PBRAppearance {
+                      baseColor 0 0 0
+                      metalness 0.1
+                    }
+                    geometry Box {
+                      size 0.06 0.001 0.04
+                    }
+                  }
+                ]
+              }
+            ]
+            boundingObject Group {
+              children [
+                Transform {
+                  translation -0.251 0.023 -0.025
+                  rotation 1 0 0 -1.5707953071795862
+                  children [
+                    Cylinder {
+                      height 0.04
+                      radius 0.045
+                    }
+                  ]
+                }
+                Transform {
+                  translation 0.283 0.023 -0.025
+                  rotation 1 0 0 -1.5707996938995747
+                  children [
+                    Cylinder {
+                      height 0.04
+                      radius 0.04
+                    }
+                  ]
+                }
+                Transform {
+                  translation -0.244 -0.038 -0.025
+                  rotation 0 0 1 -0.785395307179586
+                  children [
+                    Box {
+                      size 0.06 0.001 0.04
+                    }
+                  ]
+                }
+                Transform {
+                  translation 0.215 -0.047 -0.025
+                  rotation 0 0 1 0.523599
+                  children [
+                    Box {
+                      size 0.12 0.001 0.04
+                    }
+                  ]
+                }
+                Transform {
+                  translation 0.003 0.06 -0.025
+                  children [
+                    Box {
+                      size 0.5 0.001 0.04
+                    }
+                  ]
+                }
+              ]
+            }
+            physics Physics {
+            }
+            device [
+              LinearMotor {
+                name "LEFT_LINEAR"
+              }
+            ]
+          }
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              anchor 0.011 -0.027 0.039
+              springConstant 50
+              dampingConstant 10
+            }
+            endPoint Solid {
+              translation 0.011 -0.027 0.039
+              rotation 3.2696303357908493e-07 -0.2588180265805989 -0.9659260992005639 3.1415853071795863
+              children [
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    anchor -0.035 0 -0.085
+                  }
+                  device [
+                    RotationalMotor {
+                      name "wheel_l1"
+                    }
+                  ]
+                  endPoint Solid {
+                    translation -0.035 0 -0.085
+                    rotation 1 0 0 0
+                    children [
+                      Shape {
+                        appearance PBRAppearance {
+                          baseColor 0 0 0
+                          metalness 0.1
+                        }
+                        geometry DEF wheel Mesh {
+                          url [
+                            "/home/alejoxbg/Documents/Capulus/meshes/Webots/Rueda_ResorteV1.0.dae"
+                          ]
+                        }
+                      }
+                    ]
+                    boundingObject USE wheel
+                    physics Physics {
+                      mass 1
+                    }
+                  }
+                }
+                Shape {
+                  appearance PBRAppearance {
+                    metalness 0.7
+                  }
+                  geometry DEF Pata Mesh {
+                    url [
+                      "Pieza_ResorteV1.3.dae"
+                    ]
+                  }
+                }
+              ]
+              boundingObject USE Pata
+              physics Physics {
+              }
+            }
+          }
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              anchor 0.011 -0.027 -0.121
+              springConstant 50
+              dampingConstant 10
+            }
+            endPoint Solid {
+              translation 0.011 -0.027 -0.121
+              rotation 3.2696303357908493e-07 -0.2588180265805989 -0.9659260992005639 3.1415853071795863
+              children [
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    anchor -0.035 0 -0.085
+                  }
+                  device [
+                    RotationalMotor {
+                      name "wheel_l2"
+                    }
+                  ]
+                  endPoint Solid {
+                    translation -0.035 0 -0.085
+                    rotation 1 0 0 0
+                    children [
+                      Shape {
+                        appearance PBRAppearance {
+                          baseColor 0 0 0
+                          metalness 0.1
+                        }
+                        geometry DEF wheel Mesh {
+                          url [
+                            "Rueda_ResorteV1.0.dae"
+                          ]
+                        }
+                      }
+                    ]
+                    boundingObject USE wheel
+                    physics Physics {
+                    }
+                  }
+                }
+                Shape {
+                  appearance PBRAppearance {
+                    metalness 0.7
+                  }
+                  geometry DEF Pata Mesh {
+                    url [
+                      "Pieza_ResorteV1.3.dae"
+                    ]
+                  }
+                }
+              ]
+              name "solid(4)"
+              boundingObject USE Pata
+              physics Physics {
+              }
+            }
+          }
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              anchor 0.011 -0.027 -0.042
+              springConstant 50
+              dampingConstant 10
+            }
+            endPoint Solid {
+              translation 0.011 -0.027 -0.042
+              rotation 3.2696303357908493e-07 -0.2588180265805989 -0.9659260992005639 3.1415853071795863
+              children [
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    anchor -0.035 0 -0.085
+                  }
+                  device [
+                    RotationalMotor {
+                      name "wheel_l3"
+                    }
+                  ]
+                  endPoint Solid {
+                    translation -0.035 0 -0.085
+                    rotation 1 0 0 0
+                    children [
+                      Shape {
+                        appearance PBRAppearance {
+                          baseColor 0 0 0
+                          metalness 0.1
+                        }
+                        geometry DEF wheel Mesh {
+                          url [
+                            "Rueda_ResorteV1.0.dae"
+                          ]
+                        }
+                      }
+                    ]
+                    boundingObject USE wheel
+                    physics Physics {
+                    }
+                  }
+                }
+                Shape {
+                  appearance PBRAppearance {
+                    metalness 0.7
+                  }
+                  geometry DEF Pata Mesh {
+                    url [
+                      "Pieza_ResorteV1.3.dae"
+                    ]
+                  }
+                }
+              ]
+              name "solid(3)"
+              boundingObject USE Pata
+              physics Physics {
+              }
+            }
+          }
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              anchor 0.011 -0.027 0.207
+              springConstant 50
+              dampingConstant 10
+            }
+            endPoint Solid {
+              translation 0.011 -0.027 0.207
+              rotation 3.177000326277763e-07 -0.2588180265805997 -0.9659260992005668 3.1415853071795863
+              children [
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    anchor -0.035 0 -0.085
+                  }
+                  device [
+                    RotationalMotor {
+                      name "wheel_l4"
+                    }
+                  ]
+                  endPoint Solid {
+                    translation -0.035 0 -0.085
+                    rotation 1 0 0 0
+                    children [
+                      Shape {
+                        appearance PBRAppearance {
+                          baseColor 0 0 0
+                          metalness 0.1
+                        }
+                        geometry DEF wheel Mesh {
+                          url [
+                            "Rueda_ResorteV1.0.dae"
+                          ]
+                        }
+                      }
+                    ]
+                    boundingObject USE wheel
+                    physics Physics {
+                    }
+                  }
+                }
+                Shape {
+                  appearance PBRAppearance {
+                    metalness 0.7
+                  }
+                  geometry DEF Pata Mesh {
+                    url [
+                      "Pieza_ResorteV1.3.dae"
+                    ]
+                  }
+                }
+              ]
+              name "solid(2)"
+              boundingObject USE Pata
+              physics Physics {
+              }
+            }
+          }
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              anchor 0.011 -0.027 0.119
+              springConstant 50
+              dampingConstant 10
+            }
+            endPoint Solid {
+              translation 0.011 -0.027 0.119
+              rotation 3.2696303357908493e-07 -0.2588180265805989 -0.9659260992005639 3.1415853071795863
+              children [
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    anchor -0.035 0 -0.085
+                  }
+                  device [
+                    RotationalMotor {
+                      name "wheel_l5"
+                    }
+                  ]
+                  endPoint Solid {
+                    translation -0.035 0 -0.085
+                    rotation 1 0 0 0
+                    children [
+                      Shape {
+                        appearance PBRAppearance {
+                          baseColor 0 0 0
+                          metalness 0.1
+                        }
+                        geometry DEF wheel Mesh {
+                          url [
+                            "Rueda_ResorteV1.0.dae"
+                          ]
+                        }
+                      }
+                    ]
+                    boundingObject USE wheel
+                    physics Physics {
+                    }
+                  }
+                }
+                Shape {
+                  appearance PBRAppearance {
+                    metalness 0.7
+                  }
+                  geometry DEF Pata Mesh {
+                    url [
+                      "Pieza_ResorteV1.3.dae"
+                    ]
+                  }
+                }
+              ]
+              name "solid(1)"
+              boundingObject USE Pata
+              physics Physics {
+              }
+            }
+          }
+          Shape {
+            appearance PBRAppearance {
+              metalness 0.4
+            }
+            geometry DEF Left Mesh {
+              url [
+                "Perfil_IzquierdoV1.1.dae"
+              ]
+            }
+          }
+        ]
+        boundingObject USE Left
+        physics Physics {
+        }
+      }
+    }
+    Shape {
+      appearance PBRAppearance {
+        metalness 0.5
+      }
+      geometry DEF Chasis Mesh {
+        url [
+          "ChasisV1.6.dae"
+        ]
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.22 0.077 0.473
+  }
+  physics Physics {
+  }
+  controller "Basic_capulus"
+}
