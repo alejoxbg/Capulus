@@ -4,23 +4,1191 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.01104707459734956 -0.9998451811265552 -0.01369583589440935 2.3818551147585967
-  position -0.22119307263553736 2.4515654506821427 -0.7544419158108303
+  orientation -0.14143596555562196 -0.9756767032466216 -0.16748384515872816 2.131451018443333
+  position -7.0085838448404445 9.851915011520559 -11.927218420085593
 }
 TexturedBackground {
 }
 TexturedBackgroundLight {
 }
 UnevenTerrain {
+  appearance Grass {
+    textureTransform TextureTransform {
+      scale 50 50
+    }
+  }
+  randomSeed 23
+  perlinNOctaves 9
+}
+Group {
+  children [
+    Transform {
+      children [
+        Solid {
+          translation 4.66 2.5 4.42
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(2)"
+        }
+        Solid {
+          translation 4.66 2.5 2.21
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(1)"
+        }
+        Solid {
+          translation 6.16 3.33 3.3
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(19)"
+        }
+        Solid {
+          translation 6.16 3.45 1.1
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(18)"
+        }
+        Solid {
+          translation 6.16 3.23 -1.11
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(17)"
+        }
+        Solid {
+          translation 6.16 3.12 -3.31
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(16)"
+        }
+        Solid {
+          translation 6.16 2.89 -5.52
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(15)"
+        }
+        Solid {
+          translation 6.16 2.53 -7.73
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(14)"
+        }
+        Solid {
+          translation 6.16 2.53 -9.94
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(13)"
+        }
+        Solid {
+          translation 4.66 1.91 -8.82
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(11)"
+        }
+        Solid {
+          translation 4.66 1.91 -11.04
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(12)"
+        }
+        Solid {
+          translation 4.66 2.5 0
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(25)"
+        }
+        Solid {
+          translation 4.66 2.38 -2.2
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(8)"
+        }
+        Solid {
+          translation 4.66 2.31 -4.41
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(9)"
+        }
+        Solid {
+          translation 4.66 2.01 -6.61
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(10)"
+        }
+      ]
+    }
+  ]
+}
+Group {
+  children [
+    Transform {
+      translation 3.03 1.45 0
+      children [
+        Solid {
+          translation 4.66 2.5 4.42
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(2)"
+        }
+        Solid {
+          translation 4.66 2.5 2.21
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(3)"
+        }
+        Solid {
+          translation 6.16 3.33 3.3
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(3)"
+        }
+        Solid {
+          translation 6.16 3.45 1.1
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(3)"
+        }
+        Solid {
+          translation 6.16 3.23 -1.11
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(3)"
+        }
+        Solid {
+          translation 6.16 3.12 -3.31
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(3)"
+        }
+        Solid {
+          translation 6.16 2.89 -5.52
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(3)"
+        }
+        Solid {
+          translation 6.16 2.53 -7.73
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(3)"
+        }
+        Solid {
+          translation 6.16 2.53 -9.94
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(3)"
+        }
+        Solid {
+          translation 4.66 1.91 -8.82
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(3)"
+        }
+        Solid {
+          translation 4.66 1.91 -11.04
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(3)"
+        }
+        Solid {
+          translation 4.66 2.5 0
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(3)"
+        }
+        Solid {
+          translation 4.66 2.38 -2.2
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(3)"
+        }
+        Solid {
+          translation 4.66 2.31 -4.41
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(3)"
+        }
+        Solid {
+          translation 4.66 2.01 -6.61
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(3)"
+        }
+      ]
+    }
+  ]
+}
+Group {
+  children [
+    Transform {
+      translation 6.04 3.24 0
+      children [
+        Solid {
+          translation 4.66 2.5 4.42
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(3)"
+        }
+        Solid {
+          translation 4.66 2.5 2.21
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(3)"
+        }
+        Solid {
+          translation 6.16 3.33 3.3
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(3)"
+        }
+        Solid {
+          translation 6.16 3.45 1.1
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(3)"
+        }
+        Solid {
+          translation 6.16 3.23 -1.11
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(3)"
+        }
+        Solid {
+          translation 6.16 3.12 -3.31
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(3)"
+        }
+        Solid {
+          translation 6.16 2.89 -5.52
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(3)"
+        }
+        Solid {
+          translation 6.16 2.53 -7.73
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(3)"
+        }
+        Solid {
+          translation 6.16 2.53 -9.94
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(3)"
+        }
+        Solid {
+          translation 4.66 1.91 -8.82
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(3)"
+        }
+        Solid {
+          translation 4.66 1.91 -11.04
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(3)"
+        }
+        Solid {
+          translation 4.66 2.5 0
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(3)"
+        }
+        Solid {
+          translation 4.66 2.38 -2.2
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(3)"
+        }
+        Solid {
+          translation 4.66 2.31 -4.41
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(3)"
+        }
+        Solid {
+          translation 4.66 2.01 -6.61
+          scale 0.05 0.05 0.05
+          children [
+            Shape {
+              appearance OsbWood {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeStem.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance Grass {
+              }
+              geometry Mesh {
+                url [
+                  "/home/alejoxbg/catkin_ws/src/Capulus/Capulus_webots/meshes/Webots/47-mapletree/MapleTreeLeaves.obj"
+                ]
+              }
+            }
+          ]
+          name "solid(3)"
+        }
+      ]
+    }
+  ]
+}
+UnevenTerrain {
+  translation 4.43048 0.00611885 0
+  rotation 0 0 1 0.523599
+  name "uneven terrain(1)"
+  appearance Grass {
+    textureTransform TextureTransform {
+      scale 50 50
+    }
+  }
   randomSeed 23
   perlinNOctaves 9
 }
 Ramp30deg {
-  translation 0.44 1.76 2.32
+  translation -4.05 1.76 2.32
   rotation 0 1 0 -1.5707953071795862
 }
 ThreeSteps {
-  translation 0.53 1.72 3.58
+  translation -10.55 2.61 3.58
 }
 WoodenBox {
   translation -4.85 2.32 1.65
@@ -33,7 +1201,7 @@ WoodenBox {
   size 2 2.1 1.6
 }
 Robot {
-  translation 0.61 2.39 0
+  translation 3.34 2.28 -2.56
   children [
     HingeJoint {
       jointParameters HingeJointParameters {
@@ -651,7 +1819,7 @@ Robot {
             }
             endPoint Solid {
               translation 0.011 -0.027 0.039
-              rotation 3.2696303357908493e-07 -0.2588180265805989 -0.9659260992005639 3.1415853071795863
+              rotation 3.2696303357908466e-07 -0.2588180265805989 -0.9659260992005639 3.1415853071795863
               children [
                 HingeJoint {
                   jointParameters HingeJointParameters {
@@ -708,7 +1876,7 @@ Robot {
             }
             endPoint Solid {
               translation 0.011 -0.027 -0.121
-              rotation 3.2696303357908493e-07 -0.2588180265805989 -0.9659260992005639 3.1415853071795863
+              rotation 3.2696303357908466e-07 -0.2588180265805989 -0.9659260992005639 3.1415853071795863
               children [
                 HingeJoint {
                   jointParameters HingeJointParameters {
@@ -765,7 +1933,7 @@ Robot {
             }
             endPoint Solid {
               translation 0.011 -0.027 -0.042
-              rotation 3.2696303357908493e-07 -0.2588180265805989 -0.9659260992005639 3.1415853071795863
+              rotation 3.2696303357908466e-07 -0.2588180265805989 -0.9659260992005639 3.1415853071795863
               children [
                 HingeJoint {
                   jointParameters HingeJointParameters {
@@ -822,7 +1990,7 @@ Robot {
             }
             endPoint Solid {
               translation 0.011 -0.027 0.207
-              rotation 3.177000326277763e-07 -0.2588180265805997 -0.9659260992005668 3.1415853071795863
+              rotation 3.1770003262777604e-07 -0.2588180265805997 -0.9659260992005668 3.1415853071795863
               children [
                 HingeJoint {
                   jointParameters HingeJointParameters {
@@ -879,7 +2047,7 @@ Robot {
             }
             endPoint Solid {
               translation 0.011 -0.027 0.119
-              rotation 3.2696303357908493e-07 -0.2588180265805989 -0.9659260992005639 3.1415853071795863
+              rotation 3.2696303357908466e-07 -0.2588180265805989 -0.9659260992005639 3.1415853071795863
               children [
                 HingeJoint {
                   jointParameters HingeJointParameters {

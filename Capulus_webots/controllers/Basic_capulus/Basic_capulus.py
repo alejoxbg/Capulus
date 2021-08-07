@@ -54,7 +54,13 @@ while robot.step(timestep) != -1:
     elif key == 69:
         leftTrack=-2.0
         rightTrack=2.0
+    elif key==90:
 
+        leftTrack=-2.0
+        rightTrack=-2.0
+    elif key == 67:
+        leftTrack=2.0
+        rightTrack=2.0
         
             
     wheels[0].setVelocity(leftSpeed)
