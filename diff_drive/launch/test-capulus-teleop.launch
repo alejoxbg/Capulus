@@ -5,14 +5,7 @@
 -->
 <launch>
  
-    <include file="$(find roboclaw_driver)/launch/roboclaw.launch">
-        <arg name="test_mode" value="true"/>
-    </include>
- 
-    <test test-name="roboclaw_node_nodetest" name="roboclaw_test" pkg="roboclaw_driver" type="test_roboclaw_node.py">
-        <param name="stats_topic" type="str" value="roboclaw/stats"/>
-        <param name="speed_cmd_topic" type="str" value="roboclaw/speed_command"/>
-    </test>
+  
     
     
     <node pkg="diff_drive" type="capulus_teleop" name="capulus_teleop"  output="screen">

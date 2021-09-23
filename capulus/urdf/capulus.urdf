@@ -5,7 +5,7 @@
 						<geometry>
 								<mesh filename="package://capulus/meshes/ChasisV1.6.dae" scale="1 1 1"	/>
 						</geometry>
-						<origin	rpy="0 0 0"	xyz="0 0 0.05"	/>
+						<origin	rpy="0 0 1.57079632679"	xyz="0 0 0.05"	/>
 						<material	name="white">
 								<color	rgba="0.5 0.5 0.5 1"	/>
 						</material>
@@ -36,14 +36,31 @@
 		<joint	name="base_to_wheel1"	type="continuous">
 				<parent	link="base_link"	/>
 				<child	link="left_side"	/>
-				<origin	rpy="0 0 0"   xyz="0 0 0"	/>
+				<origin	rpy="0 0 1.57079632679"   xyz="0 0 0"	/>
 				<axis xyz="1 0 0"	/>
 		</joint>
 		<joint	name="base_to_wheel2"	type="continuous">
 				<parent	link="base_link"	/>
 				<child	link="right_side"	/>
-				<origin	rpy="0 0 0"   xyz="0 0 0"	/>
+				<origin	rpy="0 0 1.57079632679"   xyz="0 0 0"	/>
 				<axis xyz="1 0 0"	/>
+		</joint>
+
+<link	name="imu">
+				<visual>
+						<geometry>
+								<box size="0.01 0.01 0.01"	/>
+						</geometry>
+						<origin	rpy="0 0 0"	xyz="0 0 0"	/>
+						<material	name="black"	/>
+						<color	rgba="0.6 0.6 0.6 1"	/>
+				</visual>
+		</link>
+
+		<joint	name="imu_joint"	type="fixed">
+				<parent	link="base_link"	/>
+				<child	link="imu"	/>
+				<origin	rpy="0 0 0"   xyz="0 0 0.05"	/>
 		</joint>
 
 </robot>

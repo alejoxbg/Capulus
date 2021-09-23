@@ -45,11 +45,11 @@ else:
   import tty, termios
 
 MAX_LIN_VEL = 2
-MAX_ANG_VEL = 2
+MAX_ANG_VEL = 0.5
 
 
-LIN_VEL_STEP_SIZE = 0.2
-ANG_VEL_STEP_SIZE = 0.2
+LIN_VEL_STEP_SIZE = 0.1
+ANG_VEL_STEP_SIZE = 0.1
 
 msg = """
      CONTROL DE CAPULUS
@@ -144,13 +144,14 @@ if __name__=="__main__":
         print(msg)
         while(1):
             key = ord(get())
+            print(key)
             if key == 65 :
-            	if target_linear_vel < 0 and target_linear_vel >= -0.8:
+            	if target_linear_vel < 0 and target_linear_vel >= -0.4:
             		target_linear_vel=0
             		status = status + 1
             		print(vels(target_linear_vel,target_angular_vel)) 
-            	elif target_linear_vel >= 0 and target_linear_vel < 0.8:
-            		target_linear_vel = 0.8
+            	elif target_linear_vel >= 0 and target_linear_vel < 0.4:
+            		target_linear_vel = 0.4
             		status = status + 1
             		print(vels(target_linear_vel,target_angular_vel)) 
             	else:
@@ -158,12 +159,12 @@ if __name__=="__main__":
             		status = status + 1
             		print(vels(target_linear_vel,target_angular_vel))
             elif key == 66 :
-            	if target_linear_vel > 0 and target_linear_vel <= 0.8:
+            	if target_linear_vel > 0 and target_linear_vel <= 0.4:
             		target_linear_vel = 0
             		status = status + 1
             		print(vels(target_linear_vel,target_angular_vel)) 
-            	elif target_linear_vel <= 0 and target_linear_vel > -0.8:
-            		target_linear_vel = -0.8
+            	elif target_linear_vel <= 0 and target_linear_vel > -0.4:
+            		target_linear_vel = -0.4
             		status = status + 1
             		print(vels(target_linear_vel,target_angular_vel)) 
             	else:
@@ -171,12 +172,12 @@ if __name__=="__main__":
             		status = status + 1
             		print(vels(target_linear_vel,target_angular_vel))
             elif key == 67 :
-            	if target_angular_vel < 0 and target_angular_vel >= -1.0:
+            	if target_angular_vel < 0 and target_angular_vel >= -0.4:
             		target_angular_vel = 0
             		status = status + 1
             		print(vels(target_linear_vel,target_angular_vel)) 
-            	elif target_angular_vel >= 0 and target_angular_vel < 1.0:
-            		target_angular_vel = 1.0
+            	elif target_angular_vel >= 0 and target_angular_vel < 0.4:
+            		target_angular_vel = 0.4
             		status = status + 1
             		print(vels(target_linear_vel,target_angular_vel)) 
             	else:
@@ -184,12 +185,12 @@ if __name__=="__main__":
             		status = status + 1
             		print(vels(target_linear_vel,target_angular_vel))
             elif key == 68 :
-            	if target_angular_vel > 0 and target_angular_vel <= 1.0:
+            	if target_angular_vel > 0 and target_angular_vel <= 0.4:
             		target_angular_vel = 0
             		status = status + 1
             		print(vels(target_linear_vel,target_angular_vel)) 
-            	elif target_angular_vel <= 0 and target_angular_vel > -1.0:
-            		target_angular_vel = -1.0
+            	elif target_angular_vel <= 0 and target_angular_vel > -0.4:
+            		target_angular_vel = -0.4
             		status = status + 1
             		print(vels(target_linear_vel,target_angular_vel)) 
             	else:
@@ -213,12 +214,13 @@ if __name__=="__main__":
 
 
             #cinematica de robot diferencial
-            Vr = round(target_linear_vel,2) + round(target_angular_vel,2)/2
-            Vl = round(target_linear_vel,2) - round(target_angular_vel,2)/2    
+            Vr = target_linear_vel + target_angular_vel
+            Vl = target_linear_vel - target_angular_vel  
+
               
             #velocidad en QPPS
-            Vr_ticks = int(Vr * 10560) # ticks/meter ##Revisar##
-            Vl_ticks = int(Vl * 10560)
+            Vr_ticks = -int(Vr/2*100) # ticks/meter ##Revisar##
+            Vl_ticks = int(Vl/2*100)
 
 
 
@@ -226,6 +228,7 @@ if __name__=="__main__":
 
             
             twist.m2_qpps= Vl_ticks
+	    twist.max_secs=10000
 
             pub.publish(twist)
     except:
