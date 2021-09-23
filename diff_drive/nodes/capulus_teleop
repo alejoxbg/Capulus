@@ -213,12 +213,12 @@ if __name__=="__main__":
 
 
             #cinematica de robot diferencial
-            Vr = round(target_linear_vel,2) + round(target_angular_vel,2)
-            Vl = round(target_linear_vel,2) - round(target_angular_vel,2)      
+            Vr = round(target_linear_vel,2) + round(target_angular_vel,2)/2
+            Vl = round(target_linear_vel,2) - round(target_angular_vel,2) /2     
               
             #velocidad en QPPS
-            Vr_ticks = int(Vr * 633600) # ticks/meter ##Revisar##
-            Vl_ticks = int(Vl * 633600)
+            Vr_ticks = int(Vr * 6790.61) # ticks/meter ##Revisar##
+            Vl_ticks = int(Vl * 6790.61)
 
 
 
