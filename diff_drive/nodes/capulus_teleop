@@ -214,8 +214,8 @@ if __name__=="__main__":
 
 
             #cinematica de robot diferencial
-            Vr = target_linear_vel + target_angular_vel
-            Vl = target_linear_vel - target_angular_vel  
+            Vr = target_linear_vel + 0.181target_angular_vel
+            Vl = target_linear_vel - 0.181target_angular_vel  
 
               
             #velocidad en QPPS
