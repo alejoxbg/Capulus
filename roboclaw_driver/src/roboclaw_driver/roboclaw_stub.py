@@ -33,7 +33,7 @@ class RoboclawStub:
         self._read_success = 1  # Read success: 1 = success, 0 = failure
         self._write_success = True  # Write success: True/False
 
-        self._max_qpps = 10560
+        self._max_qpps = 3500
 
         # Speed Command variables
         self._m1_target_qpps = 0
