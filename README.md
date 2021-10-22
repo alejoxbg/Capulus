@@ -21,7 +21,6 @@ https://www.youtube.com/watch?v=74ZAOpA_L4A
 ![](https://github.com/alejoxbg/Capulus/blob/main/Circuit.jpg)
 
 ## Run
->cd #your workspace#/src
-https://github.com/alejoxbg/Capulus.git && cd ..
-catkin_make
-roslaunch capulus driver.launch
+Cone to your ROS worspace
+
+>roslaunch capulus driver.launch
