@@ -20,8 +20,8 @@ https://www.youtube.com/watch?v=74ZAOpA_L4A
 
 ![](https://github.com/alejoxbg/Capulus/blob/main/Circuit.jpg)
 
-##run
+## Run
 >cd #your workspace#/src
->https://github.com/alejoxbg/Capulus.git && cd ..
->catkin_make
->roslaunch capulus driver.launch
+https://github.com/alejoxbg/Capulus.git && cd ..
+catkin_make
+roslaunch capulus driver.launch
